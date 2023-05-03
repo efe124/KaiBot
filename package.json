@@ -1,0 +1,20 @@
+{
+ "name": "CodeJamKai",
+ "version": "1.0",
+ "description": "Discord bot by efekos",
+ "main": "dist/index.js",
+ "scripts": {
+  "start": "node deleteDist&&tsc&&cls&&node dist"
+ },
+ "keywords": [],
+ "author": "Efe",
+ "license": "MIT",
+ "dependencies": {
+  "@types/node": "^18.16.2",
+  "better-sqlite3": "^8.3.0",
+  "canvas": "^2.11.2",
+  "discord.js": "^14.9.0",
+  "dotenv": "^16.0.3",
+  "quick.db": "^9.1.6"
+ }
+}

@@ -1,0 +1,12 @@
+import { Client } from "discord.js";
+import { Core } from "../utils/class/Core.js";
+import { Event } from "../utils/class/Events.js";
+
+const e:Event = {
+    key:"ready",
+    once(client:Core) {
+        console.log("Ready!");
+    },
+}
+
+export default e

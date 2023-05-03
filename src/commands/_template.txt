@@ -1,0 +1,22 @@
+import { ApplicationCommandType,ChatInputCommandInteraction } from "discord.js";
+import { Command } from "../utils/class/Command";
+import {Core} from "../utils/class/Core";
+
+const c: Command = {
+    name: 'template',
+    description: 'template commnad!',
+    cooldown: 3,
+    permissions: [],
+    requiredPermissions: [],
+    async execute(client:Core, interaction:ChatInputCommandInteraction) {
+       
+    },
+    slashData: {
+        name: 'template',
+        description: 'template command!',
+        type: ApplicationCommandType.ChatInput,
+        dm_permission: false
+    }
+};
+
+export default c;
