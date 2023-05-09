@@ -12,7 +12,7 @@ const c: Command = {
     permissions: [],
     requiredPermissions: [],
     async execute(client:Core, interaction:ChatInputCommandInteraction) {
-       return interaction.reply(embed(Colors.Blue,'Impeccably Code Jam: 2023 için 72 saatte <@525374857769254912> tarafından yapıldı. 3 Adet mini oyuna ve bu oyunların kaydını tutma özelliğine sahip bir bottur.'))
+       return interaction.reply(embed(Colors.Blue,'Impeccably Code Jam: 2023 için 72 saatte <@525374857769254912> tarafından yapıldı ve Jam\'de 2. oldu. 3 Adet mini oyuna ve bu oyunların kaydını tutma özelliğine sahip bir bottur.\n\n*Şuanki sürümü (1.1) Jam\'de puanlanmış sürüm değildir.*'))
     },
     slashData: {
         name: 'hakkında',

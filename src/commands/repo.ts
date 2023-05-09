@@ -9,7 +9,7 @@ const c: Command = {
     permissions: [],
     requiredPermissions: [],
     async execute(client:Core, interaction:ChatInputCommandInteraction) {
-       
+       interaction.reply({ephemeral:true,content:"https://github.com/efe124/KaiBot"});
     },
     slashData: {
         name: 'repo',
