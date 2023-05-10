@@ -1,4 +1,4 @@
-# Kai Bot
+# Kai Bot *1.2*
 
 ## Açıklama
 Impeccably Code Jam: 2023 için 72 saatte Efe#1281 tarafından yapıldı. 3 Adet mini oyuna ve bu oyunların kaydını tutma özelliğine sahip bir bottur.

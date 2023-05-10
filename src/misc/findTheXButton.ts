@@ -154,11 +154,8 @@ export default async (client: Core, interaction: ButtonInteraction, id: string, 
  * oyuncu X'e gelince çağır 
  */
 async function foundX(client: Core, interaction: ButtonInteraction, id: string, game: FindTheXGame) {
-    game.setBlock(7, 8, "⬛");
-    game.setBlock(7, 7, "⬛");
-    game.setBlock(8, 7, "⬛");
-    game.setBlock(8, 8, "😳");
-    // oyuncuyu X'in etrafından silip oyuncuyu X'in oraya koyduk
+    game.setBlock(game.getPlayerPosition()[0],game.getPlayerPosition()[1],"⬛");
+    game.setBlock(game.getXPosition()[0],game.getXPosition()[1],"😳");
 
     const data = game.toJSON();
     client.database.games.delete(id);
@@ -210,5 +207,4 @@ async function foundX(client: Core, interaction: ButtonInteraction, id: string, 
         won:true
     })
     client.checkLevel(interaction.user);
-    interaction.deferUpdate();
 }

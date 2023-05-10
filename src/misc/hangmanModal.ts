@@ -91,9 +91,9 @@ async function lost(client: Core, interaction: ModalSubmitInteraction, id: strin
     const results:string[] = [];
     var expToGet = 0;
     expToGet += data.foundChars.length*1.5; // doğru harfler
-    expToGet += (data.triedChars.length+data.triedChars.length)*0.3 // denenen harfler
+    expToGet += (data.triedChars.length+data.foundChars.length)*0.3 // denenen harfler
     results.push(`+${data.foundChars.length*1.5} | ${t('results.hangman.correct',{locale:interaction.locale,parameters:[["count",data.foundChars.length+'']]})}`)
-    results.push(`+${(data.triedChars.length+data.triedChars.length)*0.3} | ${t('results.hangman.tried',{locale:interaction.locale,parameters:[["count",(data.triedChars.length+data.foundChars.length)+'']]})}`)
+    results.push(`+${(data.triedChars.length+data.foundChars.length)*0.3} | ${t('results.hangman.tried',{locale:interaction.locale,parameters:[["count",(data.triedChars.length+data.foundChars.length)+'']]})}`)
 
     interaction.message.edit({
         files: [

@@ -197,16 +197,14 @@ export function generateMap(): FindTheXMapData {
     const map = new FindTheXGame({ map: list, moves: 0, player: [0, 0], x: [0, 0] });
     //// map.setBlock(Math.round(Math.random()*8),Math.round(Math.random()*8),"😳");
     //// map.setBlock(Math.round(Math.random()*8),Math.round(Math.random()*8),"❌");
-    map.setBlock(1, 1, "😳");
-    map.setBlock(8, 8, "❌");
-    map.setBlock(2, 1, "⬛");
-    map.setBlock(1, 2, "⬛");
-    map.setBlock(2, 2, "⬛");
-    map.setBlock(7, 7, "⬛");
-    map.setBlock(8, 7, "⬛");
-    map.setBlock(7, 8, "⬛");
-    // oyuncu ve X rastgelelikten bağımsız oluşmalı o yüzden onları sonradan direk kendimiz koyuyoruz %100 sadece 1 tane oluyo ikisindende
-    //diğer dördüde etraflarını açmak için
+    //// map.setBlock(1, 1, "😳");
+    //// map.setBlock(8, 8, "❌");
+    //// map.setBlock(2, 1, "⬛");
+    //// map.setBlock(1, 2, "⬛");
+    //// map.setBlock(2, 2, "⬛");
+    //// map.setBlock(7, 7, "⬛");
+    //// map.setBlock(8, 7, "⬛");
+    //// map.setBlock(7, 8, "⬛");
 
     return map.toJSON().map;
 }

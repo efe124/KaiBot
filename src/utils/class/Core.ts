@@ -29,6 +29,7 @@ export class Core extends Client {
     };
     async checkLevel(user:User){
         const db = await this.database.users.fetch(user.id);
+        db.exp = Math.round(db.exp) // gelen xp'yi yuvarlamak
         db.level = Math.floor(db.exp/100) // 100 xp'de bir level
         db.rank = Math.floor(db.level/3) // 3 level (300 xp)'de bir rank
         this.database.users.getDatabase().set(user.id,db);

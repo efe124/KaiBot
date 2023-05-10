@@ -1,8 +1,7 @@
-import { ActionRowBuilder, ApplicationCommandOptionType, ApplicationCommandType, ButtonBuilder, ButtonStyle, ChatInputCommandInteraction, Colors, Sticker } from "discord.js";
+import {  ApplicationCommandOptionType, ApplicationCommandType,  ChatInputCommandInteraction, Colors} from "discord.js";
 import { Command } from "../utils/class/Command";
 import { Core } from "../utils/class/Core";
-import t from "../utils/locale";
-import { embed } from "../utils/functions";
+import t from "../utils/locale"
 import { LogManager } from "../utils/class/LogManager";
 import { GameType, generateId } from "../utils/class/types";
 
