@@ -20,4 +20,4 @@ client.login(process.env.token);
 const dir = join(process.cwd(),'images','hangman');
 
 if(!existsSync(join(dir,'i̇.png')))
-cpSync(join(dir,'i.png'),join(dir,'i̇.png'));
+cpSync(join(dir,'i.png'),join(dir,'i̇.png')); // i̇ zip içinde kullanılabilen bir karakter değil
